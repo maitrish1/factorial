@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+
+<body>
+    <h1>Check the output in console</h1>
+    <script>
+        // Check the factorial of a number
+        const num = prompt("Enter a positive integer number: ");
+
+
+        if (num < 0) {
+            console.log("Error! please enter a valid number");
+        }
+
+         
+        else if (num === 0) {
+            console.log(`The factorial of ${num} is 1`);
+        }
+
+        
+        else {
+            let fact = 1;
+            for (i = 1; i <= num; i++) {
+                fact *= i;
+            }
+            console.log(`The factorial of ${num} is ${fact}.`);
+        }
+    </script>
+</body>
+
+</html>
